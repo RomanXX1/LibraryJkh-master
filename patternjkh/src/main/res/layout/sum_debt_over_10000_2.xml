@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="В связи с задолженностью за жилищно-коммунальные услуги перед ООО УК ДОМЖИЛСЕРВИС сообщаем, что жителям, попавшим в этот список, будет произведено ограничение коммунальных услуг (согласно п.114-122 Правил предоставления коммунальных услуг собственникам и пользователям помещений в многоквартирных домах и жилых домов, утв. Правительством РФ от 6 мая 2011 г. №354)"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Подключение производится в течение 2-х календарных дней с момента получения подтверждения полного погашения задолженности и оплаты расходов исполнителя по введению ограничения, приостановлению и возобновлению предоставления коммунальной услуги"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(п. 120 правил предоставления коммунальных услуг)."
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Внимание: в случае оплаты через банк или банковский терминал, необходимо в кратчайшие сроки выслать чек, подтвердающий полное погашение задолженности перед ООО УК ДОМЖИЛСЕРВИС, во избежание ограничения. Поступление, обработка таких платежей и обновление списка должников на сайте производится в течение 3-х банковских операционных дня."
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фотографию, скан или скриншот чека Вы можете выслать в WhatsApp или e-mail:"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Исполнительному директору Рудой Е.В. - 8 926 618 54 67;"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Руководителю отдела по начислениям Краснову М.М. - 8 909 689 79 34 (mmk06@yandex.ru);"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Контент-менеджеру Иваск Я.В. - 8 968 321 52 74 (ivask_yaroslav@mail.ru)."
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Частичное погашение задолженности не является основанием для подключения, после произведенного ограничения."
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_marginLeft="12dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_counter_history_error"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_counter_error"/>
+
+    <TextView
+        android:id="@+id/tv_counter_history_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="24dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        tools:text="20.11.2018 00:00:00"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_counter_history_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="8dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        tools:text="6223.13"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+</LinearLayout>

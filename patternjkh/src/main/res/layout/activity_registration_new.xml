@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_layout_with_internet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/layout_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="24dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/logo_login_main"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/reg_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:drawableStart="@drawable/ic_smartphone"
+                    android:drawableLeft="@drawable/ic_smartphone"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/reg_phone"
+                    android:text="+7"
+                    android:inputType="phone"
+                    android:digits="0123456789+-"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/grey"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"
+                    android:typeface="sans"
+                    app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+                <EditText
+                    android:id="@+id/reg_fio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_perm_identity"
+                    android:drawableLeft="@drawable/ic_perm_identity"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/reg_fio"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/grey"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"
+                    android:typeface="sans"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_phone" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_to_main"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:minHeight="10dp"
+                    android:elevation="24dp"
+                    android:text="Войти"
+                    android:textColor="@color/ColorPrimary"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/ColorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_registered_already" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_registration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:elevation="24dp"
+                    android:text="Зарегистрироваться"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/ColorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switch_agreement" />
+
+                <TextView
+                    android:id="@+id/tv_registered_already"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Если Вы уже регистрировались"
+                    android:textColor="#969696"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_registration" />
+
+                <Switch
+                    android:id="@+id/switch_agreement"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Согласие на обработку персональных данных"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_fio" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+
+        <include
+            android:id="@+id/layout_support"
+            layout="@layout/support_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fitsSystemWindows="false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_no_internet"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_no_internet" />
+
+        <TextView
+            android:id="@+id/tv_no_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="Ошибка загрузки данных, проверьте соединение с интернетом"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_no_internet_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Обновить"
+            android:textSize="16sp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

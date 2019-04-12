@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">Мобильное ЖКХ</string>
+
+    <string name="title_enter">Вы действительно хотите выйти?</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="enter_text_comment">Введите сообщение..</string>
+    <string name="enter_text_count">Введите показание..</string>
+    <string name="name_btn_add_app">Отправить</string>
+    <string name="send_SMS">Отправить SMS-сообщение</string>
+    <string name="close">Закрыть</string>
+    <string name="cancel">Отмена</string>
+
+    <string name="registration_ok">Регистрация прошла успешно. Пароль выслан на указанный e-mail.</string>
+    <string name="forgot_ok">Восстановление прошло успешно. Новый пароль выслан на </string>
+
+    <string name="Title_counters">Показания приборов</string>
+    <string name="Title_work">Заявки</string>
+    <string name="create_app">Создать заявку</string>
+    <string name="chk_close">Показать закрытые</string>
+    <string name="chk_read">Показать отвеченные заявки</string>
+    <string name="chk_answered">Показать пройденные</string>
+    <string name="chk_readed">Показать прочитанные</string>
+    <string name="number_header">Номер</string>
+    <string name="name_header">Название</string>
+    <string name="date_header">Дата</string>
+    <string name="author_header">Пользователь</string>
+    <string name="comm_header">Комментарий</string>
+    <string name="name_btn_close_popup">Закрыть историю</string>
+    <string name="send_app_ad">Создание заявки...</string>
+
+    <string name="add_app">Добавить заявку</string>
+    <string name="type_app">Тип заявки</string>
+    <string name="urgency_app">Приоритет</string>
+    <string name="enter_name_app">Краткое название</string>
+    <string name="enter_text_app">Описание</string>
+    <string name="attach_files">Прикрепите файлы</string>
+    <string name="choice_house">Укажите дом</string>
+    <string name="choice_flat">Укажите квартиру</string>
+    <string name="choice_LS">Укажите лицевой счет</string>
+    <string name="personal_account_without_colon">Лицевой счет</string>
+    <string name="choice_ls">Подбор (лиц. счет)</string>
+    <string name="not_connection">Не удалось подключиться к серверу. Продолжить без подключения?</string>
+    <string name="not_connection_no_continue">Не удалось подключиться к серверу.</string>
+    <string name="send_app">ДОБАВИТЬ ЗАЯВКУ</string>
+
+    <string name="counter_add"><u>Передать показания</u></string>
+    <string name="counter_change"><u>Изменить показания</u></string>
+
+    <string name="txt_rating_main">Помогите нам стать лучше:</string>
+    <string name="txt_rating_rating">Оцените работы службы поддержки</string>
+    <string name="txt_rating_comment">Прокомментируйте Вашу оценку</string>
+
+    <string name="count_name">Прибор</string>
+    <string name="count_prev">ПРЕДЫД</string>
+    <string name="count_value">ТЕКУЩ</string>
+    <string name="count_value_no_history">Текущие</string>
+    <string name="count_diff">РАСХОД</string>
+
+    <string name="add_count_btn">Внести показания</string>
+    <string name="cancel_count_btn">Отменить</string>
+
+    <string name="ch_house">Выберите улицу</string>
+    <string name="ch_flat">Укажите квартиру</string>
+    <string name="ch_ls">Выберите лицевой счет</string>
+    <string name="ed_ls">Укажите лицевой счет</string>
+    <string name="ch_telefon">Укажите телефон</string>
+    <string name="ch_mail">Укажите e-mail</string>
+    <string name="ch_text">Опишите проблему</string>
+    <string name="text_choice">ВЫБРАТЬ</string>
+
+    <string-array name="types_app">
+        <item>Бухгалтерия</item>
+        <item>Паспортный стол</item>
+        <item>Сантехник</item>
+        <item>Электрик</item>
+        <item>Другие вопросы</item>
+    </string-array>
+
+    <string name="counter">Прибор:</string>
+    <string name="pred">Предыдущее значение:</string>
+    <string name="diff">Количество:</string>
+    <string name="teck">Текущее значение:</string>
+    <string name="ed_value_hint">Укажите тек. значение...</string>
+
+    <string name="text">Текст:</string>
+    <string name="Tema">Тема:</string>
+    <string name="Status">Статус:</string>
+    <string name="Type_app">Тип:</string>
+    <string name="Header">Заголовок:</string>
+    <string name="add_comment">Добавить комментарий</string>
+    <string name="close_app">Закрыть заявку</string>
+
+    <string name="pr_app">Принять</string>
+    <string name="rep_app">Перевести</string>
+    <string name="ok_app">Выполнить</string>
+
+    <string name="title_group_nav">Дополнительно</string>
+    <string name="apps">Заявки</string>
+    <string name="questions_answers">Опрос</string>
+    <string name="news_answers">Объявление</string>
+    <string name="counters">Показания приборов</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Настройки</string>
+    <string name="dont_push">Не принимать оповещения</string>
+    <string name="use_viber">Использовать для исходящих звонков Viber</string>
+
+    <string name="title_activity_make_photo">MakePhotoActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="load_file">Скачивание файла...</string>
+    <string name="choice_del_photo">Действительно удалить фотографию?</string>
+
+    <string name="DateTime">Дата/Время:</string>
+    <string name="adress">Адрес:</string>
+
+    <string name="send_comm">Ответить</string>
+    <string name="menu">Меню</string>
+    <string name="enter_comm">Введите комментарий</string>
+    <string name="close_comm">Закрыть</string>
+    <string name="files_comm">Файлы</string>
+    <string name="ok_app_cons">ВЫПОЛНИТЬ</string>
+    <string name="get_app_cons">ПРИНЯТЬ</string>
+    <string name="send_app_cons">ПЕРЕВЕСТИ</string>
+
+    <string name="action_left">ПРЕДЫДУЩИЙ</string>
+    <string name="action_rigth">СЛЕДУЮЩИЙ</string>
+    <string name="end_test">Завершить опрос</string>
+
+    <string name="download">Загрузка фото...</string>
+    <string name="detailing">Детализация</string>
+    <string name="cost">Оплатить</string>
+    <string name="questions">Опросы</string>
+    <string name="news">Объявления</string>
+    <string name="OSV">Ведомость</string>
+    <string name="action_exit">Выход</string>
+
+    <string name="action_make_photo">Сделать фото</string>
+    <string name="action_take_photo_from_gallery">Выбрать фото из галереи</string>
+    <string name="action_take_file">Выбрать файл</string>
+    <string name="action_delete_photo">Удалить фото</string>
+
+    <!-- Заголовки основных действий -->
+    <string name="title_main_action_notification">Уведомления</string>
+    <string name="title_main_action_call_dispatcher">Звонок диспетчеру</string>
+    <string name="title_main_action_appeals">Заявки</string>
+    <string name="title_main_action_questions">Опросы</string>
+    <string name="title_main_action_counters">Показания счетчиков</string>
+    <string name="title_main_action_statement">Ведомость</string>
+    <string name="title_main_action_cost">Оплата ЖКУ</string>
+    <string name="title_main_action_additional_services">Доп. услуги</string>
+    <string name="title_main_action_webcam">Web-камеры</string>
+
+    <string name="title_menu_action_exit">Выход</string>
+
+    <string name="call">Позвонить</string>
+
+    <string name="need_cost">Необходимо оплатить</string>
+
+    <string name="good_morning">доброе утро!</string>
+    <string name="good_afternoon">добрый день!</string>
+    <string name="good_evening">добрый вечер!</string>
+    <string name="good_night">доброй ночи!</string>
+
+    <string name="personal_accounts">Лицевые счета</string>
+    <string name="address">Адрес</string>
+    <string name="address_not_specified">Не указан</string>
+
+    <string name="fio">ФИО</string>
+
+    <string name="month_name_prev">&lt;%1$s</string>
+    <string name="month_name_next">%1$s&gt;</string>
+
+    <string name="cold_water">Холодная вода</string>
+    <string name="hot_water">Горячая вода</string>
+    <string name="electric_energy">Электроэнергия</string>
+
+    <string name="add_ls"><u>Подключить лицевой счет</u></string>
+
+    <string name="personal_account">Лицевой счет:</string>
+
+    <string name="housing_and_communal_services">Жилищно-коммунальные услуги</string>
+    <string name="total">ИТОГО</string>
+
+    <string name="total_rub">%1$s руб.</string>
+
+    <string name="handling_with_number">Заявка № %1$s</string>
+
+    <string name="personal_account_not_added">Лицевые счета не подключены, нажмите сюда для подключения</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="appVersion">1.78</string>
+    <string name="last1">Текущая версия приложения устарела</string>
+    <string name="last2">устарела</string>
+    <string name="last3">Текущая версия приложения устарела и может работать не стабильно. Для корректной работы обновите приложение</string>
+    <string name="last4">Перейти в Play Market</string>
+    <string name="last5"><u>Продолжить работу в текущей версии</u></string>
+    <string name="title_activity_last_version">LastVersionActivity</string>
+    <string name="title_activity_tech_send">TechSend</string>
+
+    <string name="meeting_protocol">В соответствии с ч.1 ст.46 ЖК РФ, подлинники решений и протокола общего собрания собственников помещений в многоквартирном доме подлежат обязательному представлению лицом, по инициативе которого было созвано общее собрание в управляющую организацию. \n\nУправляющая организация в течение пяти дней с момента получения указанных в ч.1 настоящей статьи подлинников решений и протокола общего собрания собственников помещений обязана в порядке, установленном федеральным органом исполнительной власти, осуществляющим функции по выработке и реализации государственной политики и нормативно-правовому регулированию в сфере жилищно-коммунального хозяйства, направить подлинники указанных решений и протокола, в том числе с использованием системы, в орган государственного жилищного надзора для хранения в течение трех лет.</string>
+
+    <plurals name="plurals_voices">
+        <item quantity="zero">0 голосов</item>
+        <item quantity="one">%1$d голос</item>
+        <item quantity="two">%1$d голоса</item>
+        <item quantity="few">%1$d голоса</item>
+        <item quantity="many">%1$d голосов</item>
+        <item quantity="other">%1$d голосов</item>
+    </plurals>
+
+</resources>

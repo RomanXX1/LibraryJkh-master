@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="32dp"
+    android:background="@drawable/main_background">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_home"
+        style="@style/MainActionConstraintLayoutStyle"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_img_home"
+            style="@style/MainActionCardViewImageStyle" >
+            <ImageView
+                android:id="@+id/img_home"
+                style="@style/MainActionImageStyle"
+                android:src="@drawable/ic_home" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_home"
+            style="@style/MainActionTextStyle"
+            android:text="Главное меню"
+            app:layout_constraintEnd_toStartOf="@id/img_arrow_home"
+            app:layout_constraintLeft_toLeftOf="@id/card_view_img_home"
+            app:layout_constraintStart_toEndOf="@id/card_view_img_home" />
+
+        <ImageView
+            android:id="@+id/img_arrow_home"
+            style="@style/MainActionImageArrowStyle"
+            android:src="@drawable/ic_navigate_next" />
+
+        <View
+            style="@style/MainActionsDividerStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/MainActionsDividerStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_profile"
+        style="@style/MainActionConstraintLayoutStyle"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_home">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_img_profile"
+            style="@style/MainActionCardViewImageStyle" >
+            <ImageView
+                android:id="@+id/img_profile"
+                style="@style/MainActionImageStyle"
+                android:src="@drawable/ic_person_menu" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_profile"
+            style="@style/MainActionTextStyle"
+            android:text="Профиль"
+            app:layout_constraintEnd_toStartOf="@id/img_arrow_profile"
+            app:layout_constraintLeft_toLeftOf="@id/card_view_img_profile"
+            app:layout_constraintStart_toEndOf="@id/card_view_img_profile" />
+
+        <ImageView
+            android:id="@+id/img_arrow_profile"
+            style="@style/MainActionImageArrowStyle"
+            android:src="@drawable/ic_navigate_next" />
+
+        <View
+            style="@style/MainActionsDividerStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/MainActionsDividerStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_exit"
+        style="@style/MainActionConstraintLayoutStyle"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_profile">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_img_additional_services"
+            style="@style/MainActionCardViewImageStyle"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txt_additional_services"
+            style="@style/MainActionTextStyle"
+            android:text="@string/title_menu_action_exit"
+            app:layout_constraintEnd_toStartOf="@id/img_arrow_additional_services"
+            app:layout_constraintLeft_toLeftOf="@id/card_view_img_additional_services"
+            app:layout_constraintStart_toEndOf="@id/card_view_img_additional_services" />
+
+
+        <ImageView
+            android:id="@+id/img_arrow_additional_services"
+            style="@style/MainActionImageArrowStyle"
+            android:src="@drawable/ic_navigate_next" />
+
+        <View
+            style="@style/MainActionsDividerStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/MainActionsDividerStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

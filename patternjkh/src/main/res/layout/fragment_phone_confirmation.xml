@@ -1,0 +1,64 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp">
+
+    <EditText
+        android:id="@+id/et_access_code_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/access_code_sms"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txt_sent_to_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:maxLines="2"
+        android:paddingLeft="3dp"
+        android:paddingStart="3dp"
+        android:text="@string/sent_to_phone"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:typeface="sans"
+        app:layout_constraintLeft_toLeftOf="@id/et_create_password"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_send_access_code_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/send_access_code_again"
+        android:textColor="@color/ColorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/txt_sent_to_phone"
+        app:layout_constraintTop_toBottomOf="@id/txt_sent_to_phone" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="24dp"
+        android:text="@string/btn_next"
+        app:backgroundTint="@color/button_grey_blue_selector"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

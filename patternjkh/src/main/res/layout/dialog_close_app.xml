@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dip">
+
+    <TextView
+        android:id="@+id/txtRatingMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/txt_rating_main"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txtRatingRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_rating_rating"
+        android:textColor="@color/ColorPrimaryDark"/>
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/txtRatingComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_rating_comment"
+        android:textColor="@color/ColorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/txtComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="3" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

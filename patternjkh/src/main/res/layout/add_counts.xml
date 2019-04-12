@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_add_counter"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/text_Count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:ems="10"
+        android:hint="@string/enter_text_count"
+        android:inputType="numberDecimal"
+        android:lines="3"
+        android:layout_marginTop="10dp">
+
+    </EditText>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_add_count_dialog_cancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Отменить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_add_count_dialog"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Отправить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/pb_add_count_dialog"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_add_count_dialog"
+            app:layout_constraintEnd_toEndOf="@+id/btn_add_count_dialog"
+            app:layout_constraintStart_toStartOf="@+id/btn_add_count_dialog"
+            app:layout_constraintTop_toTopOf="@+id/btn_add_count_dialog" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

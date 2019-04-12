@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#32cd32</color>
+    <color name="red">#FF0000</color>
+    <color name="grey">#c0c0c0</color>
+    <color name="dark_grey">#616161</color>
+    <color name="ligth_grey">#dedede</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Эти 2 цвета являются главными по всему приложению. Менять только тут. -->
+    <color name="ColorPrimary">#23b6ed</color>
+    <color name="ColorPrimaryDark">#1e90ff</color>
+
+    <color name="black">#000000</color>
+
+    <color name="comment_hidden_gray">#8a8a8a</color>
+
+    <color name="orange">#FFA500</color>
+
+    <color name="colorTvGrey">#a8a8a8</color>
+
+    <!-- Цвета для модуля "Общие собрания собственников" -->
+    <color name="colorBackTitleMeeting">#eeeae9</color>
+    <color name="colorMeetingDivider">#bfc0c0</color>
+</resources>

@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Имя пользователя</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Войти</string>
+    <string name="action_sign_in_short">Войти</string>
+    <string name="chk_remember">Запомнить</string>
+    <string name="forgot_pass">ЗАБЫЛИ ПАРОЛЬ</string>
+    <string name="forgot_pass_underline"><u>ЗАБЫЛИ ПАРОЛЬ?</u></string>
+
+    <string name="error_invalid_password">Не указан пароль</string>
+    <string name="error_incorrect_password">Неверный логин или пароль</string>
+    <string name="error_field_required">Не указан номер телефона</string>
+    <string name="error_occurred_during_registration_process_Try_to_register_again">Ошибка в процессе регистрации. Попробуйте зарегистрироваться заново</string>
+
+    <string name="error_failed_add_new_personal_account">Ошибка. Не удалось добавить новый лицевой счет</string>
+
+    <string name="reg_button">Зарегистрироваться</string>
+    <string name="login_button_cancel"><u>Отмена</u></string>
+    <string name="registration"><u>ЗАРЕГИСТРИРОВАТЬСЯ</u></string>
+    <string name="choice_UK">СМЕНИТЬ УК</string>
+    <string name="send_tech">Обращение в тех. поддержку</string>
+    <string name="reg_fio">ФИО</string>
+    <string name="reg_house">Адрес дома</string>
+    <string name="reg_flat">Номер квартиры</string>
+    <string name="reg_number">Номер лицевого счета</string>
+    <string name="reg_phone">Телефон</string>
+    <string name="reg_mail">Эл. почта</string>
+    <string name="tech_text">Текст обращения в тех. поддержку</string>
+
+    <!-- Заголовки шагов регистрации -->
+    <string name="title_phone_confirmation">Подтверждение телефона</string>
+    <string name="title_new_password">Новый пароль</string>
+    <string name="title_add_personal_account">Добавить лицевой счет</string>
+
+    <string name="access_code_sms">Код доступа из смс</string>
+    <string name="sent_to_phone">Отправлен на телефон %1$s \n (действует в течении 10 минут)</string>
+    <string name="error_invalid_access_code">Неправильный код доступа</string>
+    <string name="send_access_code_again"><u>Отправить код доступа еще раз</u></string>
+    <string name="btn_next">Далее</string>
+
+    <string name="create_password">Придумайте пароль</string>
+    <string name="btn_save">Сохранить</string>
+
+    <string name="house">Дом</string>
+    <string name="flat_number">Номер квартиры</string>
+    <string name="personal_account_number">Номер лицевого счета</string>
+    <string name="error_personal_account_not_registered">Данный лицевой счет не зарегистрирован</string>
+    <string name="error_personal_account_already_assigned_to_another_phone">Данный лицевой счет уже закреплен за другим телефоном</string>
+    <string name="error_personal_account_not_exist">Данный лицевой счет не существует</string>
+    <string name="personal_account_description">Описание лицевого счета</string>
+    <string name="btn_add">Добавить</string>
+
+    <string name="btn_tech_ok">Отправить</string>
+    <string name="btn_tech_close">Закрыть</string>
+    <string name="btn_choice">Перевести</string>
+    <string name="btn_tech_no">Отменить</string>
+    <string name="fog_button">Напомнить</string>
+    <string name="fog_name">Лиц. счет</string>
+    <string name="txt_add_counter">Введите текущие показания прибора:</string>
+
+    <string name="problems">Возникли проблемы?</string>
+    <string name="write_to_us"><u>Напишите нам!</u></string>
+
+    <string name="go_on">Перейти к оплате</string>
+
+</resources>

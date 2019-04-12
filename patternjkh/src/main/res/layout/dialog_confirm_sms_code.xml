@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтвердите завершение голосования"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Смс-сообщение с кодом подтверждения отправлено на Ваш номер телефона.\nВведите код в поле ниже:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/et_dialog_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:textCursorDrawable="@null"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dialog_sms_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отмена"
+            android:textColor="@color/ColorPrimary"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_dialog_sms_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подтвердить"
+            android:textColor="@color/ColorPrimary"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+    </LinearLayout>
+
+</LinearLayout>

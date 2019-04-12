@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_pays_history_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="20.11.201811111"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_pays_history_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        tools:text="6111111223.13"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_pays_history_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="12dp"
+        android:paddingLeft="8dp"
+        android:gravity="right"
+        tools:text="Неверно введены данные и прочий д"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+</LinearLayout>

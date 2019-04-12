@@ -1,0 +1,56 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp">
+
+    <TextView
+        android:id="@+id/label_personal_accounts"
+        style="@style/PersonalAccountLabelStyle"
+        android:layout_marginTop="4dp"
+        android:text="@string/personal_accounts"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_add_personal_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_circle"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/label_personal_accounts"
+        app:layout_constraintTop_toTopOf="@id/label_personal_accounts" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/label_personal_accounts">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_main_ls"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/item_ls_main" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

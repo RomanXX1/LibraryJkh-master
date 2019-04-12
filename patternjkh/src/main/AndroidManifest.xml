@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.patternjkh">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application android:usesCleartextTraffic="true">
+        <activity android:name=".ui.jkh_login.LoginMobileJkh"></activity>
+        <activity android:name=".ui.meetings.MeetingProfileActivity" />
+        <activity android:name=".ui.meetings.MeetingPollActivity" />
+        <activity android:name=".ui.meetings.MeetingsActivity" />
+        <activity android:name=".ui.meetings.MeetingResultActivity" />
+        <activity
+            android:name=".ui.login_dispatcher.LoginDispatcherActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.counters.AddCounterValueActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name=".ui.statement.HistoryOsvOldActivity" />
+        <activity android:name=".ui.others.PasswordRecoveryActivity" />
+        <activity android:name=".ui.others.ProfileActivity" />
+        <activity android:name=".ui.others.TechSendActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".ui.others.LastVersionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.statement.PaymentResultActivity" />
+        <activity android:name=".ui.statement.PayServiceActivity" />
+        <activity android:name=".ui.statement.CostNoPayActivity" />
+        <activity android:name=".ui.statement.HistoryOsvActivity" />
+        <activity android:name=".ui.statement.CostActivity" />
+        <activity android:name=".ui.statement.StatementActivity" />
+        <activity android:name=".ui.counters.CountersActivity" />
+        <activity android:name=".ui.registration.RegLsActivity" />
+        <activity android:name=".ui.others.AddPersonalAccountActivity" />
+        <activity android:name=".ui.apps.AppsActivity" />
+        <activity android:name=".ui.others.ChoiceLsActivity" />
+        <activity android:name=".ui.apps.AddApplicationActivity" />
+        <activity android:name=".ui.apps.AppActivity_Cons" />
+        <activity android:name=".ui.apps.AppActivity" />
+        <activity android:name=".ui.polls.QuestionActivity" />
+        <activity android:name=".ui.polls.QuestionsActivity" />
+        <activity android:name=".ui.webcams.WebviewCamActivity" />
+        <activity android:name=".ui.webcams.WebcamsActivity" />
+        <activity android:name=".ui.additionalServices.AdditionalServicesActivity" />
+    </application>
+
+</manifest>

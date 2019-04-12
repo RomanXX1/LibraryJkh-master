@@ -1,0 +1,192 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/layout_tech"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_add_ls_street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Улица"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Улица"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/tv_add_ls_street"
+                app:layout_constraintTop_toBottomOf="@id/tv_add_ls_street" />
+
+            <View
+                android:id="@+id/divider_spinner_house"
+                style="@style/MainActionsDividerStyle"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_house"
+                app:layout_constraintEnd_toEndOf="@id/spinner_house"
+                app:layout_constraintLeft_toLeftOf="@id/spinner_house"
+                app:layout_constraintRight_toRightOf="@id/spinner_house"
+                app:layout_constraintStart_toStartOf="@id/spinner_house" />
+
+            <TextView
+                android:id="@+id/tv_add_ls_house_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Номер Дома"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@id/divider_spinner_house"
+                app:layout_constraintTop_toBottomOf="@id/divider_spinner_house" />
+
+            <Spinner
+                android:id="@+id/spinner_house_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Номер дома"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/tv_add_ls_house_number"
+                app:layout_constraintTop_toBottomOf="@id/tv_add_ls_house_number" />
+
+            <View
+                android:id="@+id/divider_spinner_house_number"
+                style="@style/MainActionsDividerStyle"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_house_number"
+                app:layout_constraintEnd_toEndOf="@id/spinner_house_number"
+                app:layout_constraintLeft_toLeftOf="@id/spinner_house_number"
+                app:layout_constraintRight_toRightOf="@id/spinner_house_number"
+                app:layout_constraintStart_toStartOf="@id/spinner_house_number" />
+
+            <TextView
+                android:id="@+id/tv_add_ls_flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/flat_number"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@id/divider_spinner_house_number"
+                app:layout_constraintTop_toBottomOf="@id/divider_spinner_house_number" />
+
+            <Spinner
+                android:id="@+id/spinner_flat_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/flat_number"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/tv_add_ls_flat"
+                app:layout_constraintTop_toBottomOf="@id/tv_add_ls_flat" />
+
+            <View
+                android:id="@+id/divider_spinner_flat_number"
+                style="@style/MainActionsDividerStyle"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_flat_number"
+                app:layout_constraintEnd_toEndOf="@id/spinner_flat_number"
+                app:layout_constraintLeft_toLeftOf="@id/spinner_flat_number"
+                app:layout_constraintRight_toRightOf="@id/spinner_flat_number"
+                app:layout_constraintStart_toStartOf="@id/spinner_flat_number" />
+
+            <TextView
+                android:id="@+id/tv_ls_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Номер лицевого счета"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@id/spinner_flat_number"
+                app:layout_constraintTop_toBottomOf="@id/spinner_flat_number" />
+
+            <EditText
+                android:id="@+id/et_personal_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:maxLines="1"
+                android:textColorHint="@color/grey"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"
+                android:typeface="sans"
+                app:layout_constraintLeft_toLeftOf="@id/tv_ls_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_ls_title" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elevation="24dp"
+                android:text="@string/btn_add"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:backgroundTint="@color/ColorPrimary"
+                app:layout_constraintTop_toBottomOf="@id/et_personal_account_number" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_tech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/ligth_grey"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_img_tech"
+            style="@style/MainActionCardViewImageStyle">
+
+            <ImageView
+                android:id="@+id/img_tech"
+                style="@style/MainActionImageStyle"
+                android:src="@drawable/ic_message_white" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_tech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text="Написать в техподдержку"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

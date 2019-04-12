@@ -1,0 +1,177 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Лицевые счета не подключены"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_layout_with_internet" />
+
+    <TextView
+        android:id="@+id/tv_add_ls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/add_ls"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_empty" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_layout_with_internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_apps"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toTopOf="@id/save_app"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ListView
+                android:id="@+id/work_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scrollbars="none" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <android.support.v7.widget.AppCompatButton xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/save_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="24dp"
+            android:text="@string/send_app"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/ColorPrimary"
+            app:layout_constraintBottom_toTopOf="@id/chk_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Switch
+            android:id="@+id/chk_close"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:text="@string/chk_close"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/layout_tech"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:targetApi="ice_cream_sandwich" />
+
+        <TextView
+            android:id="@+id/tv_apps_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="По заявкам данных нет"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_tech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/ligth_grey"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_img_tech"
+                style="@style/MainActionCardViewImageStyle">
+
+                <ImageView
+                    android:id="@+id/img_tech"
+                    style="@style/MainActionImageStyle"
+                    android:src="@drawable/ic_message_white" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_tech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:text="Написать в техподдержку"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_no_internet"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_no_internet" />
+
+        <TextView
+            android:id="@+id/tv_no_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="Ошибка загрузки данных, проверьте соединение с интернетом"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_no_internet_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Обновить"
+            android:textSize="16sp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

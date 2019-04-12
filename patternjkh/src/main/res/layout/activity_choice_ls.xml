@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="2dp" />
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large_top_by4"
+                android:text="@string/ch_house"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/ch_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large_top_by8"
+                android:background="@drawable/btn_dropdown_spinner"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large_top_by4"
+                android:text="@string/ch_flat"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/ch_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large_top_by8"
+                android:background="@drawable/btn_dropdown_spinner"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large_top_by4"
+                android:text="@string/ch_ls"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/ch_ls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large_top_by8"
+                android:background="@drawable/btn_dropdown_spinner"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large_top_by4"
+                android:text="@string/ch_telefon"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/ed_Telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:background="@drawable/roundrect"/>
+
+            <android.support.v7.widget.AppCompatButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btn_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                app:backgroundTint="@color/green"
+                android:elevation="24dp"
+                android:text="@string/text_choice"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"/>
+
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

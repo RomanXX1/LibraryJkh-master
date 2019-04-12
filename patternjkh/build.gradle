@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 82
+        versionName "0.0.82"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+ext {
+    supportVersion = "28.0.0"
+    constraintVersion = "1.1.3"
+    firebaseVersion = "11.6.2"
+    picassoVersion = "2.5.0"
+    tinkoffVersion = "1.4.5"
+    roundedImageView = "2.3.0"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support.constraint:constraint-layout:$constraintVersion"
+    implementation "com.android.support:support-v4:$supportVersion"
+    implementation "com.android.support:cardview-v7:$supportVersion"
+    implementation "com.android.support:appcompat-v7:$supportVersion"
+    implementation "com.android.support:design:$supportVersion"
+    implementation "com.android.support:recyclerview-v7:$supportVersion"
+    implementation "com.google.firebase:firebase-core:$firebaseVersion"
+    implementation "com.google.firebase:firebase-messaging:$firebaseVersion"
+    implementation "com.google.firebase:firebase-auth:$firebaseVersion"
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+
+    implementation "com.makeramen:roundedimageview:$roundedImageView"
+
+    implementation "ru.tinkoff.acquiring:ui:$tinkoffVersion"
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.8@aar') {
+        transitive = true
+    }
+    testImplementation 'junit:junit:4.12'
+}

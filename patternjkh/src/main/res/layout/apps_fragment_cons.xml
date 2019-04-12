@@ -1,0 +1,68 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_apps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/save_app"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="@dimen/padding_top_5dp">
+        <ListView
+            android:id="@+id/work_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/save_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_top_5dp"
+        android:layout_marginTop="@dimen/padding_top_5dp"
+        android:elevation="24dp"
+        android:text="@string/send_app"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@color/ColorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/chk_close" />
+
+    <Switch
+        android:id="@+id/chk_close"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="@dimen/padding_top_5dp"
+        android:paddingEnd="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingStart="6dp"
+        android:text="@string/chk_close"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:targetApi="ice_cream_sandwich" />
+
+    <TextView
+        android:id="@+id/tv_apps_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="По заявкам данных нет"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

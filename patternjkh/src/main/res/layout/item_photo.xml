@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:id="@+id/small_foto"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_top_5dp"
+        android:layout_marginBottom="@dimen/padding_top_5dp"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/foto_text"
+            android:layout_marginLeft="@dimen/padding_top_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            tools:text="Файл по обращению"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/foto_date"
+            android:layout_marginLeft="@dimen/padding_top_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="11.04.2018 17:49:14"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:id="@+id/del_foto"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/padding_top_5dp"
+        android:layout_marginBottom="@dimen/padding_top_5dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_trash"
+        android:visibility="invisible"/>
+
+</TableRow>
